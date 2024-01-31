@@ -1,17 +1,20 @@
 import { MerkleDistributor } from './src';
-import { MERKLE_DISTRIBUTOR_PROGRAM_ID, getOrCreateATAInstruction, deriveClaimStatus } from './src/utils';
 import { IDL } from './src/types/merkle_distributor';
+import {
+  deriveClaimStatus,
+  getOrCreateATAInstruction,
+  MERKLE_DISTRIBUTOR_PROGRAM_ID,
+} from './src/utils';
 
 export default MerkleDistributor;
 
 export {
-  IDL,
-  // Constant
-  MERKLE_DISTRIBUTOR_PROGRAM_ID,
-  // Helper
-  getOrCreateATAInstruction,
   deriveClaimStatus,
+  getOrCreateATAInstruction,
+  IDL,
+  MERKLE_DISTRIBUTOR_PROGRAM_ID,
 };
 
 export type { UserResponse } from './src/index';
-export type { MerkleDistributor as MerkleDistributorIDL } from './src/types/merkle_distributor';
+export type { MerkleDistributorIDL } from './src/types/merkle_distributor';
+export { MerkleDistributor } from './src/index';

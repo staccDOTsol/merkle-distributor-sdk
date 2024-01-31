@@ -1,4 +1,4 @@
-export type MerkleDistributor = {
+export type MerkleDistributorIDL = {
   version: '0.0.1';
   name: 'merkle_distributor';
   instructions: [
@@ -766,7 +766,7 @@ export type MerkleDistributor = {
   ];
 };
 
-export const IDL: MerkleDistributor = {
+export const IDL: MerkleDistributorIDL = {
   version: '0.0.1',
   name: 'merkle_distributor',
   instructions: [
